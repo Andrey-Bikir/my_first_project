@@ -1,0 +1,44 @@
+
+.sectoin {
+  padding: 20px;
+  height: 100vh;
+  
+}
+
+.conteiner {
+  background-color: grey;
+  height: 300px;
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(90%);
+  z-index: 2;
+}
+
+.conteiner:hover {
+  /* position: relative; */
+  background-color: red;
+  border-radius: 50%;
+  transition-duration: 2s;
+  transform: scale(1);
+  transform: translateY(60%);
+
+ }
+
+.conteiner::before {
+  content: "STOP WAR!!!";
+  font-size: 54px;
+  font-weight: 900;
+  color:black;
+  display: block;
+  position: relative;
+  left: 20%;
+  top: 5%
+}
+
+.block {
+  width: 800px;
+  height: 500px;
+}
